@@ -27,7 +27,6 @@ public class ApiUtils {
 
 
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
-
     private static Retrofit.Builder builder = new Retrofit.Builder()
             .baseUrl(BASE_URL + API)
             .addConverterFactory(GsonConverterFactory.create(getGson()));
